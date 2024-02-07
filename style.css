@@ -1,26 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
-}
-body {
+  font-family: 'PT Sans', sans-serif;
 }
 .main {
   width: 100%;
-
   background-color: #074e99;
-
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  /* text-align: center; */
+  position: relative;
+  text-align: center;
 }
 .container {
   width: 100%;
-  max-width: 70%;
+  max-width: 90%;
   min-height: fit-content;
   background-color: #fff;
   border-radius: 5px;
@@ -28,11 +25,23 @@ body {
   padding: 2.5rem;
 }
 .reload {
-  width: 10vw;
-  height: 2vw;
-  margin-top: 10px;
-  /* margin: 0 auto; */
+  width: fit-content;
+  padding: 10px;
+  height: fit-content;
+  /* margin-top: 10px; */
+  margin: 10px auto;
+  /* margin-left: 42%; */
+  font-size: 1.1rem;
+  font-weight: bold;
   text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: #a3a1a1;
+}
+.icon-right {
+    text-align: right;
+    position: relative;
+    right: 0;
 }
 .author,
 .quote {
@@ -42,4 +51,26 @@ body {
   font-size: 2rem;
   font-weight: 600;
   margin: 15px 0 20px;
+}
+.author {
+  font-weight: lighter;
+}
+.quote-container {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
+.icon {
+  color: #a3a1a1;
+}
+.reload:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    max-width: 70%;
+  }
 }
