@@ -8,7 +8,7 @@
 .main {
   width: 100%;
   background-color: #074e99;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,9 +28,7 @@
   width: fit-content;
   padding: 10px;
   height: fit-content;
-  /* margin-top: 10px; */
   margin: 10px auto;
-  /* margin-left: 42%; */
   font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
